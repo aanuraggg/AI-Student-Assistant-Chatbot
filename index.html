@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>AI Student Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">✦ Student AI</div>
+
+    <button id="new-chat" class="new-chat">
+      + New Chat
+    </button>
+
+    <div class="history-label">YOUR CHATS</div>
+    <div id="chat-history"></div>
+
+    <div class="sidebar-footer">
+      🎓 CA3 AI Chatbot Project
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <button id="menu-btn" class="menu-btn">☰</button>
+      <div>
+        <strong>AI Student Assistant</strong>
+        <small>Powered by Google Gemini</small>
+      </div>
+      <span class="status">● AI Online</span>
+    </header>
+
+    <section id="chat-box" class="chat-box">
+    </section>
+
+    <div class="composer">
+      <div class="input-area">
+        <textarea id="user-input"
+          placeholder="Ask me anything..."
+          rows="1"></textarea>
+        <button id="send-btn">➤</button>
+      </div>
+      <p class="hint">
+        Powered by Gemini • AI can make mistakes
+      </p>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
